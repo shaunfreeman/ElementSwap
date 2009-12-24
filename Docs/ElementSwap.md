@@ -44,10 +44,12 @@ How to use
 ### Example:
 
 ### JavaScript
+
 	#JS
 	var elSwap = new ElementSwap('.div_swap');
 
 ### CSS
+
 	#CSS
 	#el1 {background-color:#f00;}
 	#el2 {background-color:#0f0;}
@@ -73,6 +75,7 @@ How to use
 	}
 
 ### HTML
+
 	#HTML
 	<div id="el1" class="div_swap"><p>DIV 1</p></div>
 	<div id="el2" class="div_swap"><p>DIV 2</p></div>
