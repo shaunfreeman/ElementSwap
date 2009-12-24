@@ -4,7 +4,7 @@ name: ElementSwap.js
 description: Slide show interface to swap between any group of elements.
 authors: Shaun Freeman
 requires:
-    core/1.2.4
+    core/1.2.4:
     - Class
     - Class.Extras
     - Element
