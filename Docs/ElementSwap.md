@@ -19,7 +19,7 @@ How to use
 
 ### Arguments
 
-1. elements - (*mixed*) A collection of elements to add. Takes the same arguments as [$$]
+1. elements - (*mixed*) A collection of elements to add. Takes the same arguments as [$$][]
 2. options - (*object*, optional) An object with options. See below.
 
 ### Options

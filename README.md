@@ -19,7 +19,7 @@ How to use
 
 ### Arguments
 
-1. elements - (*mixed*) A collection of elements to add. Takes the same arguments as [$$]
+1. elements - (*mixed*) A collection of elements to add. Takes the same arguments as [$$][]
 2. options - (*object*, optional) An object with options. See below.
 
 ### Options
@@ -44,10 +44,12 @@ How to use
 ### Example:
 
 ### JavaScript
+
 	#JS
 	var elSwap = new ElementSwap('.div_swap');
 
 ### CSS
+
 	#CSS
 	#el1 {background-color:#f00;}
 	#el2 {background-color:#0f0;}
@@ -73,10 +75,10 @@ How to use
 	}
 
 ### HTML
+
 	#HTML
 	<div id="el1" class="div_swap"><p>DIV 1</p></div>
 	<div id="el2" class="div_swap"><p>DIV 2</p></div>
 	<div id="el3" class="div_swap"><p>DIV 3</p></div>
-
 
 [$$]: http://www.mootools.net/docs/core/Element/Element#dollars
