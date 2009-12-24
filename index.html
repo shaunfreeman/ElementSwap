@@ -10,6 +10,11 @@
 	<title>vincentbluff/ElementSwap @ GitHub</title>
 	
 	<script>
+		window.addEvent('domready', function() {
+			var elSwap = new ElementSwap('.div_swap',{
+				activateOnLoad: 'el3'
+			});
+		});
 	</script>
 	
 	<style type="text/css">
@@ -34,6 +39,29 @@
 		pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+	
+	#el1 {background-color:#f00;}
+	#el2 {background-color:#0f0;}
+	#el3 {background-color:#00f;}
+	
+	.div_swap {
+		position:absolute;
+		top:0px;
+		width:300px;
+		height:300px;
+		display:none;
+	}
+	
+	.active { display:block; }
+	
+	.elementSwap {
+		position:relative;
+		width:300px;
+		height:300px;
+		margin-left:auto;
+		margin-right:auto;
+		overflow:hidden;
+	}
 	</style>
 	
 </head>
@@ -58,6 +86,9 @@
     </div>
     
     <h2>Demo</h2>
+	<div id="el1" class="div_swap"><p>DIV 1</p></div>
+	<div id="el2" class="div_swap"><p>DIV 2</p></div>
+	<div id="el3" class="div_swap"><p>DIV 3</p></div>
 
     <h2>Authors</h2>
 <p>vincentbluff (shaun@shaunfreeman.co.uk)
