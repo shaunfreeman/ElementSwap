@@ -1,7 +1,7 @@
 ElementSwap
 ===========
 
-ElementSwap is a simple Slide Show class that will swap between any element.
+ElementSwap is a simple no frills Slide Show class that will swap between any element.
 
 ![Screenshot](http://github.com/vincentbluff/ElementSwap/raw/master/screenshot.png)
 
@@ -42,6 +42,38 @@ How to use
 * (*object*) A new ElementSwap instance.
 
 ### Example:
+
+	#JS
+	var elSwap = new ElementSwap('.div_swap');
+
+	#CSS
+	#el1 {background-color:#f00;}
+	#el2 {background-color:#0f0;}
+	#el3 {background-color:#00f;}
+	
+	.div_swap {
+		position:absolute;
+		top:0px;
+		width:300px;
+		height:300px;
+		display:none;
+	}
+	
+	.active { display:block; }
+	
+	.elementSwap {
+		position:relative;
+		width:300px;
+		height:300px;
+		margin-left:auto;
+		margin-right:auto;
+		overflow:hidden;
+	}
+
+	#HTML
+	<div id="el1" class="div_swap"><p>DIV 1</p></div>
+	<div id="el2" class="div_swap"><p>DIV 2</p></div>
+	<div id="el3" class="div_swap"><p>DIV 3</p></div>
 
 
 [$$]: http://www.mootools.net/docs/core/Element/Element#dollars
