@@ -11,8 +11,10 @@
 	<script>
 
 		window.addEvent('domready', function() {
-			var elSwap = new ElementSwap('.div_swap');
-			elSwap.start(0);
+			var elSwap = new ElementSwap('.div_swap',{
+				activateOnLoad: 'el3'
+			});
+			//elSwap.start('el3');
 		});
 
 	</script> 
