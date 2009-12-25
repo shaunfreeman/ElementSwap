@@ -8,10 +8,11 @@ requires:
     - Class
     - Class.Extras
     - Element
+    - Element.Event
     - Selectors
 provides: [ElementSwap]
 license: MIT-style license
-version: 1.0
+version: 1.0.1
 ...
 */
 
@@ -47,7 +48,7 @@ var ElementSwap = new Class({
 			'class': this.options.panelWrapClass
 		}).inject(this.slides[0], 'before').adopt(this.slides);
 		
-		if (this.options.activateOnLoad) this.activate(this.options.activateOnLoad);
+		this.activate(this.options.activateOnLoad);
 		
 		if (this.options.autoPlay) this.start();
 	},
